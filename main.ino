@@ -10,7 +10,7 @@ int A_pin1 = A0;
 int trig=9;
 int echo=8;
 
-class analog_Sensors{
+class Sensors{
   private:
 
   public:
@@ -65,7 +65,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  analog_Sensors sensors;
+  Sensors sensors;
   float light_Sensor1 = sensors.sensor_Read(A_pins[0]);
   float light_Sensor2 = sensors.sensor_Read(A_pins[4]);
   float light_Sensor3 = sensors.sensor_Read(A_pins[5]);
